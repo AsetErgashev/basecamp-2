@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- THE HEAD TAG PARTIAL -->
+  <%- include("../partials/auth") %>
+
+  <body class="body">
+    <!-- THE HEADER TAG PARTIAL -->
+    <%- include("../partials/auth") %>
+    <main class="main">
+      <h1 class="h1">Login</h1>
+      <form action="/auth/login" method="post" class="form" width="80">
+        <input
+          class="input"
+          type="text"
+          name="username"
+          placeholder="type username"
+        />
+        <input
+          class="input"
+          type="password"
+          name="password"
+          placeholder="type password"
+        />
+        <input class="button" type="submit" value="login" />
+       <a class="a" href="/auth/signup">Register</a>
+      </form>
+    </main>
+    <!-- THE HEAD TAG PARTIAL -->
+    <%- include("../partials/auth") %>
+  </body>
+</html>
