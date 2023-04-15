@@ -1,18 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-  <!-- THE HEAD TAG PARTIAL -->
-  <%- include("partials/dashboard") %>
+<%- include('layout/header')  %>
 
-  <body>
-    <!-- THE HEADER TAG PARTIAL -->
-    <%- include("partials/dashboard") %>
-    <main class="ttr">
-      <h2>Dashboard</h2>
-      <!-- <a href="/dreams"><button class="button">Dreams</button></a> -->
-      <a href="/projects"><button class="button">Projects</button></a>
-      <a href="/auth/logout"><button class="button">Logout</button></a>
-    </main>
-    <!-- THE HEAD TAG PARTIAL -->
-    <%- include("partials/dashboard") %>
-  </body>
-</html>
+<h1>Dashboard</h1>
+
+<%- include('layout/footer')  %>

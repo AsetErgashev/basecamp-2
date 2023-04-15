@@ -10,11 +10,14 @@ const SECRET = process.env.SECRET || "secret"
 const HomeRouter = require("./routes/home.js");
 const session = require("express-session");
 const connect = require("connect-mongodb-session")(session)
+// const path = require('path');
 
 
 const app = express();
 
-app.set("view engine", "ejs");
+// app.set('views', path.join(__dirname, 'views'))
+app.set('view engine', 'ejs')
+// app.use(require('ejs-yield'))
 
 app.use(cors())
 app.use(methodOverride("_method"))
