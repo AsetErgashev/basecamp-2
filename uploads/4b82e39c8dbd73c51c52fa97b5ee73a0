@@ -1,9 +1,0 @@
-php -S localhost:8000
-php -S localhost:8000
-php -S localhost:8000 -t .
-cd .
-cd ..
-php -S localhost:8000 -t Php.teach/
-php -v
-php v
-php -v
